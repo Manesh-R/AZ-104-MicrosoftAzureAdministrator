@@ -48,7 +48,7 @@ In this task, you will deploy two virtual machines that will be used to test dif
    ```pwsh
    $location = '[Azure_region]'
 
-   $rgName = 'az104-10-rg0'
+   $rgName = 'az104-10-rg0-[deployId]'
 
    New-AzResourceGroup -Name $rgName -Location $location
    ```
@@ -77,7 +77,7 @@ In this task, you will create a recovery services vault.
     | Settings | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of a new resource group **az104-10-rg1** |
+    | Resource group | the name of a new resource group **az104-10-rg1-[deployId]** |
     | Name | **az104-10-rsv1** |
     | Region | the name of a region where you deployed the two virtual machines in the previous task |
 

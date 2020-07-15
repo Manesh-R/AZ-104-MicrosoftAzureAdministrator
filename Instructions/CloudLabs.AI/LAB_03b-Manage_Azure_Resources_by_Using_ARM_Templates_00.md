@@ -32,11 +32,11 @@ In this task, you will create an Azure disk resource by using an Azure Resource 
 
 1. In the Azure portal, search for and select **Resource groups**. 
 
-1. In the list of resource groups, click **az104-03a-rg1**.
+1. In the list of resource groups, click **az104-03a-rg1-[deployId]**.
 
-1. On the **az104-03a-rg1** resource group blade, in the **Settings** section, click **Deployments**.
+1. On the **az104-03a-rg1-[deployId]** resource group blade, in the **Settings** section, click **Deployments**.
 
-1. On the **az104-03a-rg1 - Deployments** blade, click the first entry in the list of deployments and then click **View template**.
+1. On the **az104-03a-rg1-[deployId] - Deployments** blade, click the first entry in the list of deployments and then click **View template**.
 
     >**Note**: Review the content of the template and note that you have the option to download it to the local computer, add it to the library, and re-deploy it.
 
@@ -100,7 +100,7 @@ In this task, you will create an Azure disk resource by using an Azure Resource 
     | Setting | Value |
     | --- |--- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource Group | the name of a new resource group **az104-03b-rg1** |
+    | Resource Group | the name of a new resource group **az104-03b-rg1-[deployId]** |
     | Location | the name of any Azure region available in the subscription you are using in this lab |
     | Disk Name | **az104-03b-disk1** |
     | Location | accept the default value |
@@ -117,11 +117,11 @@ In this task, you will create an Azure disk resource by using an Azure Resource 
 
 1. In the Azure portal, search for and select **Resource groups**. 
 
-1. In the list of resource groups, click **az104-03b-rg1**.
+1. In the list of resource groups, click **az104-03b-rg1-[deployId]**.
 
-1. On the **az104-03b-rg1** resource group blade, in the **Settings** section, click **Deployments**.
+1. On the **az104-03b-rg1-[deployId]** resource group blade, in the **Settings** section, click **Deployments**.
 
-1. From the **az104-03b-rg1 - Deployments** blade, click the first entry in the list of deployments and review the content of the **Input** and **Template** blades.
+1. From the **az104-03b-rg1-[deployId] - Deployments** blade, click the first entry in the list of deployments and review the content of the **Input** and **Template** blades.
 
 ### Clean up resources
 

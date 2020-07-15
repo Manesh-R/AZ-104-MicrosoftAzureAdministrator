@@ -43,12 +43,12 @@ In this task, you will open a PowerShell session in Cloud Shell.
 
 In this task, you will create a resource group and an Azure managed disk by using Azure PowerShell session within Cloud Shell
 
-1. To create a resource group in the same Azure region as the **az104-03b-rg1** resource group you created in the previous lab, from the PowerShell session within Cloud Shell, run the following:
+1. To create a resource group in the same Azure region as the **az104-03b-rg1-[deployId]** resource group you created in the previous lab, from the PowerShell session within Cloud Shell, run the following:
 
    ```pwsh
-   $location = (Get-AzResourceGroup -Name az104-03b-rg1).Location
+   $location = (Get-AzResourceGroup -Name az104-03b-rg1-[deployId]).Location
 
-   $rgName = 'az104-03c-rg1'
+   $rgName = 'az104-03c-rg1-[deployId]'
 
    New-AzResourceGroup -Name $rgName -Location $location
    ```

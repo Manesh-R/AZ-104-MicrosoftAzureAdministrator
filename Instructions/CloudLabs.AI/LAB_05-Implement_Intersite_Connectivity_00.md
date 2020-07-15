@@ -42,7 +42,7 @@ In this task, you will deploy three virtual machines, each into a separate virtu
    ```pwsh
    $location = '[Azure_region_1]'
 
-   $rgName = 'az104-05-rg0'
+   $rgName = 'az104-05-rg0-[deployId]'
 
    New-AzResourceGroup -Name $rgName -Location $location
    ```
@@ -59,7 +59,7 @@ In this task, you will deploy three virtual machines, each into a separate virtu
 1. From the Cloud Shell pane, run the following to create the second resource group that will be hosting the second virtual network and the second virtual machine
 
    ```pwsh
-   $rgName = 'az104-05-rg1'
+   $rgName = 'az104-05-rg1-[deployId]'
 
    New-AzResourceGroup -Name $rgName -Location $location
    ```
@@ -78,7 +78,7 @@ In this task, you will deploy three virtual machines, each into a separate virtu
    ```pwsh
    $location = '[Azure_region_2]'
 
-   $rgName = 'az104-05-rg2'
+   $rgName = 'az104-05-rg2-[deployId]'
 
    New-AzResourceGroup -Name $rgName -Location $location
    ```
@@ -119,7 +119,7 @@ In this task, you will configure local and global peering between the virtual ne
     | Name of the peering from az104-05-vnet0 to remote virtual network | **az104-05-vnet0_to_az104-05-vnet1** |
     | Virtual network deployment model | **Resource manager** |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Virtual network | **az104-05-vnet1 (az104-05-rg1)** |
+    | Virtual network | **az104-05-vnet1 (az104-05-rg1-[deployId])** |
     | Name of the peering from az104-05-vnet1 to az104-05-vnet0 | **az104-05-vnet1_to_az104-05-vnet0** |
     | Allow virtual network access from az104-05-vnet0 to az104-05-vnet1 | **Enabled** |
     | Allow virtual network access from az104-05-vnet1 to az104-05-vnet0 | **Enabled** |
@@ -138,7 +138,7 @@ In this task, you will configure local and global peering between the virtual ne
     | Name of the peering from az104-05-vnet0 to remote virtual network | **az104-05-vnet0_to_az104-05-vnet2** |
     | Virtual network deployment model | **Resource manager** |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Virtual network | **az104-05-vnet2 (az104-05-rg2)** |
+    | Virtual network | **az104-05-vnet2 (az104-05-rg2-[deployId])** |
     | Name of the peering from az104-05-vnet2 to az104-05-vnet0 | **az104-05-vnet2_to_az104-05-vnet0** |
     | Allow virtual network access from az104-05-vnet0 to az104-05-vnet2 | **Enabled** |
     | Allow virtual network access from az104-05-vnet2 to az104-05-vnet0 | **Enabled** |
@@ -159,7 +159,7 @@ In this task, you will configure local and global peering between the virtual ne
     | Name of the peering from az104-05-vnet1 to remote virtual network | **az104-05-vnet1_to_az104-05-vnet2** |
     | Virtual network deployment model | **Resource manager** |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Virtual network | **az104-05-vnet2 (az104-05-rg2)** |
+    | Virtual network | **az104-05-vnet2 (az104-05-rg2-[deployId])** |
     | Name of the peering from az104-05-vnet2 to az104-05-vnet1 | **az104-05-vnet2_to_az104-05-vnet1** |
     | Allow virtual network access from az104-05-vnet1 to az104-05-vnet2 | **Enabled** |
     | Allow virtual network access from az104-05-vnet2 to az104-05-vnet1 | **Enabled** |

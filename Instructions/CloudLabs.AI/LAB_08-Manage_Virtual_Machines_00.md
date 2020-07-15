@@ -41,7 +41,7 @@ In this task, you will deploy Azure virtual machines into different availability
     | Setting | Value | 
     | --- | --- |
     | Subscription | the name of the Azure subscription you will be using in this lab |
-    | Resource group | the name of a new resource group **az104-08-rg01** |
+    | Resource group | the name of a new resource group **az104-08-rg01-[deployId]** |
     | Virtual machine name | **az104-08-vm0** |
     | Region | select one of the regions that support availability zones and where you can provision Azure virtual machines | 
     | Availability options | **Availability zone** |
@@ -67,7 +67,7 @@ In this task, you will deploy Azure virtual machines into different availability
 
     | Setting | Value | 
     | --- | --- |
-    | Name | **az104-08-rg01-vnet** |
+    | Name | **az104-08-rg01-[deployId]-vnet** |
     | Address range | **10.80.0.0/20** |
     | Subnet name | **subnet0** |
     | Subnet range | **10.80.0.0/24** |
@@ -104,7 +104,7 @@ In this task, you will deploy Azure virtual machines into different availability
 
     | Setting | Value | 
     | --- | --- |
-    | Resource group | **az104-08-rg01** |
+    | Resource group | **az104-08-rg01-[deployId]** |
     | Network Interface Name | **az104-08-vm1-nic1** |
     | Virtual Machine Name | **az104-08-vm1** |
     | Admin Username | **Student** |
@@ -342,7 +342,7 @@ In this task, you will deploy Azure virtual machine scale set across availabilit
     | Setting | Value | 
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |    
-    | Resource group | the name of a new resource group **az104-08-rg02** |    
+    | Resource group | the name of a new resource group **az104-08-rg02-[deployId]** |    
     | Virtual machine scale set name | **az10408vmss0** |
     | Region | select one of the regions that support availability zones and where you can provision Azure virtual machines different from the one you used to deploy virtual machines earlier in this lab | 
     | Availability zone | **Zones 1, 2, 3** |
@@ -361,12 +361,12 @@ In this task, you will deploy Azure virtual machine scale set across availabilit
 
     | Setting | Value | 
     | --- | --- |
-    | Name | **az104-08-rg02-vnet** |
+    | Name | **az104-08-rg02-[deployId]-vnet** |
     | Address range | **10.82.0.0/20** |
     | Subnet name | **subnet0** |
     | Subnet range | **10.82.0.0/24** |
  
-    >**Note**: Once you create a new virtual network and return to the **Networking** tab of the **Create a virtual machine scale set** blade, the **Virtual network** value will be automatically set to **az104-08-rg02-vnet**.
+    >**Note**: Once you create a new virtual network and return to the **Networking** tab of the **Create a virtual machine scale set** blade, the **Virtual network** value will be automatically set to **az104-08-rg02-[deployId]-vnet**.
 
 1. Back on the **Networking** tab of the **Create a virtual machine scale set** blade, click the **Edit network interface** icon to the right of the network interface entry. 
 
@@ -529,7 +529,7 @@ In this task, you will change the size of virtual machine scale set instances, c
 1. From the Cloud Shell pane, run the following to identify the public IP address of the load balancer in front of the Azure virtual machine scale set **az10408vmss0**.
 
    ```pwsh
-   $rgName = 'az104-08-rg02'
+   $rgName = 'az104-08-rg02-[deployId]'
 
    $lbpipName = 'az10408vmss0-ip'
 
