@@ -137,7 +137,7 @@ In this task, you will create an Azure Active Directory user, assign the RBAC ro
 
 1. Do not continue with creating the support request. Instead, sign out as the az104-02-aaduser1 user from the Azure portal and close the InPrivate browser window.
 
-#### Clean up resources
+### Clean up resources
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. 
 
@@ -175,7 +175,7 @@ In this task, you will create an Azure Active Directory user, assign the RBAC ro
 
 1. Navigate back to the **Management groups** blade, right click the **ellipsis** icon to the right of the **az104-02-mg1** management group and click **Delete**.
 
-#### Review
+### Review
 
 In this lab, you have:
 

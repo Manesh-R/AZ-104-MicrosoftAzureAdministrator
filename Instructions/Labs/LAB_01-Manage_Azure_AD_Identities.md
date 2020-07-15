@@ -235,7 +235,7 @@ In this task, you will create Azure AD guest users and grant them access to reso
 1. Click **+ Add membership** and add the guest user account to the **IT Lab Administrators** group.
 
 
-#### Clean up resources
+### Clean up resources
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs. While, in this case, there are no additional charges associated with Azure Active Directory tenants and their objects, you might want to consider removing the user accounts, the group accounts, and the Azure Active Directory tenant you created in this lab.
 
@@ -257,7 +257,7 @@ In this task, you will create Azure AD guest users and grant them access to reso
 
 1. Navigate back to the **Delete directory 'Contoso Lab'** blade and click **Delete**.
 
-#### Review
+### Review
 
 In this lab, you have:
 
