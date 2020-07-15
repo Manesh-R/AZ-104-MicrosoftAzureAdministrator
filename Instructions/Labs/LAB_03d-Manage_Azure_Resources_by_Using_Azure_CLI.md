@@ -104,7 +104,7 @@ In this task, you will managing configuration of the Azure managed disk by using
    az disk show --resource-group $RGNAME --name $DISKNAME --query sku
    ```
 
-### Clean up resources
+#### Clean up resources
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
@@ -124,7 +124,7 @@ In this task, you will managing configuration of the Azure managed disk by using
 
     >**Note**: The command executes asynchronously (as determined by the --nowait parameter), so while you will be able to run another Azure CLI command immediately afterwards within the same Bash session, it will take a few minutes before the resource groups are actually removed.
 
-### Review
+#### Review
 
 In this lab, you have:
 

@@ -114,11 +114,11 @@ In this task, you will managing configuration of the Azure managed disk by using
    (Get-AzDisk -ResourceGroupName $rgName -Name $diskName).Sku
    ```
 
-### Clean up resources
+#### Clean up resources
 
    >**Note**: Do not delete resources you deployed in this lab. You will reference them in the next lab of this module.
 
-### Review
+#### Review
 
 In this lab, you have:
 
