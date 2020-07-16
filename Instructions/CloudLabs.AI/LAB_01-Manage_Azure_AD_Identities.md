@@ -101,7 +101,6 @@ In this task, you will create Azure Active Directory groups with assigned and dy
 
 1. In the **Manage** section, click **All products**.
 
-1. Click **+ Try/Buy** and activate the free trial of Azure AD Premium P2.
 
 1. Refresh the browser window to verify that the activation was successful. 
 
