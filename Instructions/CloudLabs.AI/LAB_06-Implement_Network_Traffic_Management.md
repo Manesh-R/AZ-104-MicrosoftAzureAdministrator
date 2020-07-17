@@ -49,7 +49,7 @@ In this task, you will deploy four virtual machines into the same Azure region. 
 
    $rgName = 'az104-06-rg1'
 
-   
+    
    ```
 1. From the Cloud Shell pane, run the following to create the first virtual network and deploy a pair of virtual machines into it by using the template and parameter files you uploaded:
 
@@ -66,7 +66,7 @@ In this task, you will deploy four virtual machines into the same Azure region. 
    ```pwsh
    $rgName = 'az104-06-rg2'
 
-   
+    
    ```
 1. From the Cloud Shell pane, run the following to create the second virtual network and deploy a virtual machine into it by using the template and parameter files you uploaded:
 
@@ -83,7 +83,7 @@ In this task, you will deploy four virtual machines into the same Azure region. 
    ```pwsh
    $rgName = 'az104-06-rg3'
 
-   
+    
    ```
 1. From the Cloud Shell pane, run the following to create the third virtual network and deploy a virtual machine into it by using the template and parameter files you uploaded:
 
