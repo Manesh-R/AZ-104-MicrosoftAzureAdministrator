@@ -44,7 +44,7 @@ In this task, you will create an Azure disk resource by using an Azure Resource 
 
 1. Extract the content of the downloaded file into the **Downloads** folder on your lab computer.
 
-    >**Note**: These files are also available as **\\Allfiles\\Labs\\03\\az104-03b-md-template.json** and **\\Allfiles\\Labs\\03\\az104-03b-md-parameters.json**
+    >**Note**: These files are also available as **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\03\\az104-03b-md-template.json** and **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\03\\az104-03b-md-parameters.json**
 
 #### Task 2: Create an Azure managed disk by using an ARM template
 
@@ -93,14 +93,14 @@ In this task, you will create an Azure disk resource by using an Azure Resource 
 
 1. Back on the **Custom deployment** blade, click **Edit parameters**. 
 
-1. On the **Edit parameters** blade, click **Load file** and upload the parameters file **\\Allfiles\\Labs\\03\\az104-03b-md-parameters.json** and save the changes.
+1. On the **Edit parameters** blade, click **Load file** and upload the parameters file **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\03\\az104-03b-md-parameters.json** and save the changes.
 
 1. Back on the **Custom deployment** blade, specify the following settings:
 
     | Setting | Value |
     | --- |--- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource Group | the name of a new resource group **az104-03b-rg1-[deployId]** |
+    | Resource Group | select the existing resource group **az104-03b-rg1-[deployId]** |
     | Location | the name of any Azure region available in the subscription you are using in this lab |
     | Disk Name | **az104-03b-disk1** |
     | Location | accept the default value |

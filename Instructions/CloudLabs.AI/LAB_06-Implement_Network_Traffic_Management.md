@@ -38,18 +38,18 @@ In this task, you will deploy four virtual machines into the same Azure region. 
 
 1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**. 
 
-    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**. 
+    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, select **Show advanced settings** and then select **Use existing** and choose existing resource group. Then select **Create new** against Storage account as well as File Share and provide a unique value in both of the fields and then click on **Create storage**.  
 
-1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload** and upload the files **\\Allfiles\\Module_06\\az104-06-vms-template.json**, **\\Allfiles\\Labs\\06\\az104-06-vm-template.json**, and **\\Allfiles\\Labs\\06\\az104-06-vm-parameters.json** into the Cloud Shell home directory.
+1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload** and upload the files **\\Allfiles\\Module_06\\az104-06-vms-template.json**, **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\06\\az104-06-vm-template.json**, and **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\06\\az104-06-vm-parameters.json** into the Cloud Shell home directory.
 
-1. From the Cloud Shell pane, run the following to create the first resource group that will be hosting the first virtual network and the pair of virtual machines (replace the `[Azure_region]` placeholder with the name of an Azure region where you intend to deploy Azure virtual machines):
+1. From the Cloud Shell pane, run the following to use existing first resource group that will be hosting the first virtual network and the pair of virtual machines (replace the `[Azure_region]` placeholder with the name of an Azure region where you intend to deploy Azure virtual machines):
 
    ```pwsh
    $location = '[Azure_region]'
 
-   $rgName = 'az104-06-rg1-[deployId]'
+   $rgName = 'az104-06-rg1'
 
-   New-AzResourceGroup -Name $rgName -Location $location
+   
    ```
 1. From the Cloud Shell pane, run the following to create the first virtual network and deploy a pair of virtual machines into it by using the template and parameter files you uploaded:
 
@@ -61,12 +61,12 @@ In this task, you will deploy four virtual machines into the same Azure region. 
       -AsJob
    ```
 
-1. From the Cloud Shell pane, run the following to create the second resource group that will be hosting the second virtual network and the third virtual machine
+1. From the Cloud Shell pane, run the following to use existing second resource group that will be hosting the second virtual network and the third virtual machine
 
    ```pwsh
-   $rgName = 'az104-06-rg2-[deployId]'
+   $rgName = 'az104-06-rg2'
 
-   New-AzResourceGroup -Name $rgName -Location $location
+   
    ```
 1. From the Cloud Shell pane, run the following to create the second virtual network and deploy a virtual machine into it by using the template and parameter files you uploaded:
 
@@ -78,12 +78,12 @@ In this task, you will deploy four virtual machines into the same Azure region. 
       -nameSuffix 2 `
       -AsJob
    ```
-1. From the Cloud Shell pane, run the following to create the third resource group that will be hosting the third virtual network and the fourth virtual machine:
+1. From the Cloud Shell pane, run the following to use existing third resource group that will be hosting the third virtual network and the fourth virtual machine:
 
    ```pwsh
-   $rgName = 'az104-06-rg3-[deployId]'
+   $rgName = 'az104-06-rg3'
 
-   New-AzResourceGroup -Name $rgName -Location $location
+   
    ```
 1. From the Cloud Shell pane, run the following to create the third virtual network and deploy a virtual machine into it by using the template and parameter files you uploaded:
 
@@ -122,7 +122,7 @@ In this task, you will configure local peering between the virtual networks you 
     | Name of the peering from az104-06-vnet01 to remote virtual network | **az104-06-vnet01_to_az104-06-vnet2** |
     | Virtual network deployment model | **Resource manager** |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Virtual network | **az104-06-vnet2 (az104-06-rg2-[deployId])** |
+    | Virtual network | **az104-06-vnet2 (az104-06-rg2)** |
     | Name of the peering from az104-06-vnet2 to az104-06-vnet01 | **az104-06-vnet2_to_az104-06-vnet01** |
     | Allow virtual network access from az104-06-vnet01 to az104-06-vnet2 | **Enabled** |
     | Allow virtual network access from az104-06-vnet2 to az104-06-vnet01 | **Enabled** |
@@ -145,7 +145,7 @@ In this task, you will configure local peering between the virtual networks you 
     | Name of the peering from az104-06-vnet01 to remote virtual network | **az104-06-vnet01_to_az104-06-vnet3** |
     | Virtual network deployment model | **Resource manager** |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Virtual network | **az104-06-vnet3 (az104-06-rg3-[deployId])** |
+    | Virtual network | **az104-06-vnet3 (az104-06-rg3)** |
     | Name of the peering from az104-06-vnet3 to az104-06-vnet01 | **az104-06-vnet3_to_az104-06-vnet01** |
     | Allow virtual network access from az104-06-vnet01 to az104-06-vnet3 | **Enabled** |
     | Allow virtual network access from az104-06-vnet3 to az104-06-vnet01 | **Enabled** |
@@ -172,7 +172,7 @@ In this task, you will test transitivity of virtual network peering by using Net
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg1-[deployId]** |
+    | Resource group | **az104-06-rg1** |
     | Source type | **Virtual machine** |
     | Virtual machine | **az104-06-vm0** |
     | Destination | **Specify manually** |
@@ -193,7 +193,7 @@ In this task, you will test transitivity of virtual network peering by using Net
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg1-[deployId]** |
+    | Resource group | **az104-06-rg1** |
     | Source type | **Virtual machine** |
     | Virtual machine | **az104-06-vm0** |
     | Destination | **Specify manually** |
@@ -212,7 +212,7 @@ In this task, you will test transitivity of virtual network peering by using Net
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg2-[deployId]** |
+    | Resource group | **az104-06-rg2** |
     | Source type | **Virtual machine** |
     | Virtual machine | **az104-06-vm2** |
     | Destination | **Specify manually** |
@@ -278,7 +278,7 @@ In this task, you will configure and test routing between the two spoke virtual 
     | --- | --- |
     | Name | **az104-06-rt23** |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg2-[deployId]** |
+    | Resource group | **az104-06-rg2** |
     | Location | the name of the Azure region in which you created the virtual networks |
     | Virtual network gateway route propagation | **Disabled** |
 
@@ -314,7 +314,7 @@ In this task, you will configure and test routing between the two spoke virtual 
     | --- | --- |
     | Name | **az104-06-rt32** |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg3-[deployId]** |
+    | Resource group | **az104-06-rg3** |
     | Location | the name of the Azure region in which you created the virtual networks |
     | Virtual network gateway route propagation | **Disabled** |
 
@@ -349,7 +349,7 @@ In this task, you will configure and test routing between the two spoke virtual 
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-06-rg2-[deployId]** |
+    | Resource group | **az104-06-rg2** |
     | Source type | **Virtual machine** |
     | Virtual machine | **az104-06-vm2** |
     | Destination | **Specify manually** |
@@ -554,26 +554,6 @@ In this task, you will implement an Azure Application Gateway in front of the tw
     > **Note**: You might need to refresh the browser window or open it again by using InPrivate mode.
 
     > **Note**: Targeting virtual machines on multiple virtual networks is not a common configuration, but it is meant to illustrate the point that Application Gateway is capable of targeting virtual machines on multiple virtual networks (as well as endpoints in other Azure regions or even outside of Azure), unlike Azure Load Balancer, which load balances across virtual machines in the same virtual network.
-
-#### Clean up resources
-
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
-
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-
-1. List all resource groups created throughout the labs of this module by running the following command:
-
-   ```pwsh
-   Get-AzResourceGroup -Name 'az104-06*'
-   ```
-
-1. Delete all resource groups you created throughout the labs of this module by running the following command:
-
-   ```pwsh
-   Get-AzResourceGroup -Name 'az104-06*' | Remove-AzResourceGroup -Force -AsJob
-   ```
-
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
 
 #### Review
 

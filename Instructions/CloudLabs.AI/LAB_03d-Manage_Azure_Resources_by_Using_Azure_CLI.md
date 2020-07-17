@@ -16,7 +16,7 @@ Now that you explored the basic Azure administration capabilities associated wit
 In this lab, you will:
 
 + Task 1: Start a Bash session in Azure Cloud Shell
-+ Task 2: Create a resource group and an Azure managed disk by using Azure CLI
++ Task 2: Create an Azure managed disk by using Azure CLI
 + Task 3: Configure the managed disk by using Azure CLI
 
 ## Estimated timing: 20 minutes
@@ -33,26 +33,26 @@ In this task, you will open a Bash session in Cloud Shell.
 
 1. If prompted to select either **Bash** or **PowerShell**, select **Bash**. 
 
-    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**. 
+    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, select **Show advanced settings** and then select **Use existing** and choose existing resource group. Then select **Create new** against Storage account as well as File Share and provide a unique value in both of the fields and then click on **Create storage**.  
 
 1. If prompted, click **Create storage**, and wait until the Azure Cloud Shell pane is displayed. 
 
 1. Ensure **Bash** appears in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-#### Task 2: Create a resource group and an Azure managed disk by using Azure CLI
+#### Task 2: Create an Azure managed disk by using Azure CLI
 
-In this task, you will create a resource group and an Azure managed disk by using Azure CLI session within Cloud Shell.
+In this task, you will use existing resource group and an Azure managed disk by using Azure CLI session within Cloud Shell.
 
-1. To create a resource group in the same Azure region as the **az104-03c-rg1-[deployId]** resource group you created in the previous lab, from the Bash session within Cloud Shell, run the following:
+1. To use existing resource group in the same Azure region as the **az104-03c-rg1-[deployId]** resource group you created in the previous lab, from the Bash session within Cloud Shell, run the following:
 
    ```sh
    LOCATION=$(az group show --name 'az104-03c-rg1-[deployId]' --query location --out tsv)
 
-   RGNAME='az104-03d-rg1-[deployId]'
+   RGNAME='az104-03d-rg1-[deployId]-[deployId]'
 
-   az group create --name $RGNAME --location $LOCATION
+   az group list
    ```
-1. To retrieve properties of the newly created resource group, run the following:
+1. To retrieve properties of the existing resource group, run the following:
 
    ```sh
    az group show --name $RGNAME

@@ -33,15 +33,12 @@ In this task, you will use the Azure portal to create resource groups and create
 
 1. Search for and select **Resource groups**. 
 
-1. On the **Resource groups** blade, click **+ Add** and create a resource group with the following settings:
+1. On the **Resource groups** blade, view the existing resource groups and take note of the following resource group's region:
 
     |Setting|Value|
     |---|---|
-    |Subscription| the name of the Azure subscription you will use in this lab |
     |Resource Group| **az104-03a-rg1-[deployId]**|
-    |Region| the name of any Azure region available in the subscription you will use in this lab |
 
-1. Click **Review + Create** and then click **Create**.
 
 1. In the Azure portal, search for and select **Disks**, click **+ Add**, and specify the following settings:
 
@@ -58,7 +55,6 @@ In this task, you will use the Azure portal to create resource groups and create
 
 1. Change the disk type and size to **Standard HDD** and **32 GiB**, respectively.
 
-1. Click **Review + Create** and then click **Create**.
 
     >**Note**: Wait until the disk is created. This should take less than a minute.
 
@@ -89,7 +85,7 @@ In this task, you will apply a resource lock to an Azure resource group containi
     |Setting|Value|
     |---|---|
     |Subscription| the name of the subscription you are using in this lab |
-    |Resource Group| the name of a new resource group **az104-03a-rg3-[deployId]** |
+    |Resource Group| select the existing resource group **az104-03a-rg3-[deployId]** |
     |Disk name| **az104-03a-disk2** |
     |Region| the name of the Azure region where you created the other resource groups in this lab |
     |Availability zone| **None** |
@@ -97,7 +93,6 @@ In this task, you will apply a resource lock to an Azure resource group containi
 
 1. Set the disk type and size to **Standard HDD** and **32 GiB**, respectively.
 
-1. Click **Review + Create** and then click **Create**.
 
 1. In the Azure portal, search for and select **Resource groups**. 
 
