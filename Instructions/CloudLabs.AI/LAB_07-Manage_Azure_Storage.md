@@ -49,7 +49,7 @@ In this task, you will deploy an Azure virtual machine that you will use later i
 
    $rgName = 'az104-07-rg0-[deployId]'
 
-   ``` 
+   ```
 1. From the Cloud Shell pane, run the following to deploy thef virtual machine by using the uploaded template and parameter files:
 
    ```pwsh

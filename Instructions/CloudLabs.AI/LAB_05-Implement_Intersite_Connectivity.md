@@ -44,7 +44,6 @@ In this task, you will deploy three virtual machines, each into a separate virtu
 
    $rgName = 'az104-05-rg0-[deployId]'
 
-   
    ```
 1. From the Cloud Shell pane, run the following to create the first virtual network and deploy a virtual machine into it by using the template and parameter files you uploaded:
 
@@ -61,7 +60,6 @@ In this task, you will deploy three virtual machines, each into a separate virtu
    ```pwsh
    $rgName = 'az104-05-rg1-[deployId]'
 
-   
    ```
 1. From the Cloud Shell pane, run the following to create the second virtual network and deploy a virtual machine into it by using the template and parameter files you uploaded:
 
@@ -80,7 +78,6 @@ In this task, you will deploy three virtual machines, each into a separate virtu
 
    $rgName = 'az104-05-rg2-[deployId]'
 
-   
    ```
 1. From the Cloud Shell pane, run the following to create the third virtual network and deploy a virtual machine into it by using the template and parameter files you uploaded:
 

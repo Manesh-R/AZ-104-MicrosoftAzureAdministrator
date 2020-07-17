@@ -50,7 +50,7 @@ In this task, you will use existing resource group and an Azure managed disk by 
 
    $rgName = 'az104-03c-rg1-[deployId]'
 
-   
+
    ```
 1. To retrieve properties of the existing resource group, run the following:
 
