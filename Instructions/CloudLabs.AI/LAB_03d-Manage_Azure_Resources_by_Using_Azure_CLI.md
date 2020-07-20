@@ -48,7 +48,7 @@ In this task, you will use existing resource group and an Azure managed disk by 
    ```sh
    LOCATION=$(az group show --name 'az104-03c-rg1-[deployId]' --query location --out tsv)
 
-   RGNAME='az104-03d-rg1-[deployId]-[deployId]'
+   RGNAME='az104-03d-rg1-[deployId]'
 
    az group list
    ```

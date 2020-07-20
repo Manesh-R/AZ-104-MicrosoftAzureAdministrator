@@ -41,7 +41,7 @@ In this task, you will deploy Azure virtual machines into different availability
     | Setting | Value | 
     | --- | --- |
     | Subscription | the name of the Azure subscription you will be using in this lab |
-    | Resource group | select the existing resource group **az104-08-rg01-[deployId]** |
+    | Resource group | select the existing resource group **az104-08-rg01** |
     | Virtual machine name | **az104-08-vm0** |
     | Region | select one of the regions that support availability zones and where you can provision Azure virtual machines | 
     | Availability options | **Availability zone** |
@@ -67,7 +67,7 @@ In this task, you will deploy Azure virtual machines into different availability
 
     | Setting | Value | 
     | --- | --- |
-    | Name | **az104-08-rg01-[deployId]-vnet** |
+    | Name | **az104-08-rg01-vnet** |
     | Address range | **10.80.0.0/20** |
     | Subnet name | **subnet0** |
     | Subnet range | **10.80.0.0/24** |
@@ -104,7 +104,7 @@ In this task, you will deploy Azure virtual machines into different availability
 
     | Setting | Value | 
     | --- | --- |
-    | Resource group | **az104-08-rg01-[deployId]** |
+    | Resource group | **az104-08-rg01** |
     | Network Interface Name | **az104-08-vm1-nic1** |
     | Virtual Machine Name | **az104-08-vm1** |
     | Admin Username | **Student** |
@@ -136,7 +136,7 @@ In this task, you will install Windows Server Web Server role on the two Azure v
 
 1. On the **scripts** blade, click **Upload**.
 
-1. On the **Upload blob** blade, click the folder icon, in the **Open** dialog box, navigate to the **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\\\08** folder, select **az104-08-install_IIS.ps1**, click **Open**, and back on the **Upload blob** blade, click **Upload**. 
+1. On the **Upload blob** blade, click the folder icon, in the **Open** dialog box, navigate to the **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\08** folder, select **az104-08-install_IIS.ps1**, click **Open**, and back on the **Upload blob** blade, click **Upload**. 
 
 1. In the Azure portal, search for and select **Virtual machines** and, on the **Virtual machines** blade, click **az104-08-vm0**.
 
@@ -342,7 +342,7 @@ In this task, you will deploy Azure virtual machine scale set across availabilit
     | Setting | Value | 
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |    
-    | Resource group | select the existing resource group **az104-08-rg02-[deployId]** |    
+    | Resource group | select the existing resource group **az104-08-rg02** |    
     | Virtual machine scale set name | **az10408vmss0** |
     | Region | select one of the regions that support availability zones and where you can provision Azure virtual machines different from the one you used to deploy virtual machines earlier in this lab | 
     | Availability zone | **Zones 1, 2, 3** |
@@ -361,12 +361,12 @@ In this task, you will deploy Azure virtual machine scale set across availabilit
 
     | Setting | Value | 
     | --- | --- |
-    | Name | **az104-08-rg02-[deployId]-vnet** |
+    | Name | **az104-08-rg02-vnet** |
     | Address range | **10.82.0.0/20** |
     | Subnet name | **subnet0** |
     | Subnet range | **10.82.0.0/24** |
  
-    >**Note**: Once you create a new virtual network and return to the **Networking** tab of the **Create a virtual machine scale set** blade, the **Virtual network** value will be automatically set to **az104-08-rg02-[deployId]-vnet**.
+    >**Note**: Once you create a new virtual network and return to the **Networking** tab of the **Create a virtual machine scale set** blade, the **Virtual network** value will be automatically set to **az104-08-rg02-vnet**.
 
 1. Back on the **Networking** tab of the **Create a virtual machine scale set** blade, click the **Edit network interface** icon to the right of the network interface entry. 
 
@@ -449,7 +449,7 @@ In this task, you will install Windows Server Web Server role on the instances o
 
 1. On the **scripts** blade, click **Upload**.
 
-1. On the **Upload blob** blade, click the folder icon, in the **Open** dialog box, navigate to the **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\\\08** folder, select **az104-08-install_IIS.ps1**, click **Open**, and back on the **Upload blob** blade, click **Upload**. 
+1. On the **Upload blob** blade, click the folder icon, in the **Open** dialog box, navigate to the **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\08** folder, select **az104-08-install_IIS.ps1**, click **Open**, and back on the **Upload blob** blade, click **Upload**. 
 
 1. In the Azure portal, navigate back to the **Virtual machine scale sets** blade and click **az10408vmss0**.
 
@@ -529,7 +529,7 @@ In this task, you will change the size of virtual machine scale set instances, c
 1. From the Cloud Shell pane, run the following to identify the public IP address of the load balancer in front of the Azure virtual machine scale set **az10408vmss0**.
 
    ```pwsh
-   $rgName = 'az104-08-rg02-[deployId]'
+   $rgName = 'az104-08-rg02'
 
    $lbpipName = 'az10408vmss0-ip'
 
@@ -570,7 +570,7 @@ In this task, you will change the size of virtual machine scale set instances, c
 
 1. If prompted to select either **Bash** or **PowerShell**, select **PowerShell**. 
 
-1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload** and upload the file **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\\\08\\az104-08-configure_VMSS_disks.ps1** into the Cloud Shell home directory.
+1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload** and upload the file **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\08\\az104-08-configure_VMSS_disks.ps1** into the Cloud Shell home directory.
 
 1. From the Cloud Shell pane, run the following to display the content of the script:
 
