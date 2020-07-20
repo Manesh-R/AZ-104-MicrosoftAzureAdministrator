@@ -60,7 +60,7 @@ In this task, you will create and configure management groups.
 
 In this task, you will create a definition of a custom RBAC role.
 
-1. From the lab computer, open the file **\\Allfiles\\Labs\\02\\az104-02a-customRoleDefinition.json** in Notepad and review its content:
+1. From the lab computer, open the file **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\02\\az104-02a-customRoleDefinition.json** in Notepad and review its content:
 
    ```json
    {
@@ -88,7 +88,7 @@ In this task, you will create a definition of a custom RBAC role.
 
     >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**. 
 
-1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu click **Upload**, and upload the file **\\Allfiles\\Labs\\02\\az104-02a-customRoleDefinition.json** into the Cloud Shell home directory.
+1. In the toolbar of the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu click **Upload**, and upload the file **C:\\AllFiles\\AZ-104-MicrosoftAzureAdministrator-master\\Allfiles\\Labs\\02\\az104-02a-customRoleDefinition.json** into the Cloud Shell home directory.
 
 1. From the Cloud Shell pane, run the following to create the custom role definition:
 
