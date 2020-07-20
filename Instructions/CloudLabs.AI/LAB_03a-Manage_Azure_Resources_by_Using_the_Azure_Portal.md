@@ -15,7 +15,7 @@ You need to explore the basic Azure administration capabilities associated with 
 
 In this lab, we will:
 
-+ Task 1: Create resource groups and deploy resources to resource groups
++ Task 1: deploy resources to resource groups
 + Task 2: Move resources between resource groups
 + Task 3: Implement and test resource locks
 
@@ -25,9 +25,9 @@ In this lab, we will:
 
 ### Exercise 1
 
-#### Task 1: Create resource groups and deploy resources to resource groups
+#### Task 1: deploy resources to resource groups
 
-In this task, you will use the Azure portal to create resource groups and create a disk in the resource group.
+In this task, you will use the Azure portal to create a disk in the resource group.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -118,12 +118,6 @@ In this task, you will apply a resource lock to an Azure resource group containi
 1. On the **az104-03a-disk2** blade, in the **Settings** section, click **Configuration**, set the disk type and size to **Premium SSD** and **64 GiB**, respectively, and save the change. Verify that the change was successful.
 
     >**Note**: This is expected, since the resource group-level lock applies to delete operations only. 
-
-#### Clean up resources
-
-   >**Note**: Do not delete resources you deployed in this lab. You will be using them in the next lab of this module. Remove only the resource lock you created in this lab.
-
-1. Navigate to the **az104-03a-rg3-[deployId]** resource group blade, display its **Locks** blade, and remove the lock **az104-03a-delete-lock** by clicking the **Delete** link on the right-hand side of the **Delete** lock entry.
 
 #### Review
 

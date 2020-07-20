@@ -196,20 +196,6 @@ In this task, we will use a different policy definition to remediate any non-com
 
 1. Once the new storage account is provisioned, click **Go to resource** button and, on the **Overview** blade of the newly created storage account, note that the tag **Role** with the value **Infra** has been automatically assigned to the resource.
 
-#### Clean up resources
-
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. 
-
-   >**Note**: Removing unused resources ensures you will not see unexpected charges, although keep in mind that Azure policies do not incur extra cost.
-
-1. In the portal, search for and select **Policy**.
-
-1. In the **Authoring** section, click **Assignments**, click the ellipsis icon to the right of the assignment you created in the previous task and click **Delete assignment**. 
-
-1. In the portal, search for and select **Storage accounts**.
-
-1. In the list of storage accounts, select the storage account you created in the last task of this lab, click **Delete**, when prompted for the confirmation, in the **Confirm delete** type **yes** and click **Delete**. 
-
 #### Review
 
 In this lab, you have:
