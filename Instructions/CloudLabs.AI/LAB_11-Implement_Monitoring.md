@@ -88,7 +88,7 @@ In this task, you will create and configure an Azure Log Analytics workspace and
     | Settings | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of a new resource group **az104-11-rg1-[deployId]** |
+    | Resource group | select the existing resource group **az104-11-rg1-[deployId]** |
     | Log Analytics Workspace | any unique name |    
     | Region | the name of the Azure region into which you deployed the virtual machine in the previous task |
 
