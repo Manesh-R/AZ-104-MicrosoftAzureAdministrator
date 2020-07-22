@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 07 - Manage Azure Storage
-# Student lab manual
 
 ## Lab scenario
 

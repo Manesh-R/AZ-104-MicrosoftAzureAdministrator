@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 09a - Implement Web Apps
-# Student lab manual
 
 ## Lab scenario
 

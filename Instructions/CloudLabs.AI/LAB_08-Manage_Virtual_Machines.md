@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 08 - Manage Virtual Machines
-# Student lab manual
 
 ## Lab scenario
 

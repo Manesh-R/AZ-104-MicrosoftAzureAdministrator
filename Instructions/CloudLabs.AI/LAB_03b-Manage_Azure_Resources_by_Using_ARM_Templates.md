@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 03b - Manage Azure resources by Using ARM Templates
-# Student lab manual
 
 ## Lab scenario
 Now that you explored the basic Azure administration capabilities associated with provisioning resources and organizing them based on resource groups by using the Azure portal, you need to carry out the equivalent task by using Azure Resource Manager templates.

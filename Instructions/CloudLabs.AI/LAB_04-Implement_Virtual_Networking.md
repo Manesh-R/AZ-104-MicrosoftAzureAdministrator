@@ -6,7 +6,6 @@ lab:
 
 # Lab 04 - Implement Virtual Networking
 
-# Student lab manual
 
 ## Lab scenario
 

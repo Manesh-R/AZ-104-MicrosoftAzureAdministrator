@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 02a - Manage Subscriptions and RBAC
-# Student lab manual
 
 ## Lab scenario
 

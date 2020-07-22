@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 03c - Manage Azure resources by Using Azure PowerShell
-# Student lab manual
 
 ## Lab scenario
 

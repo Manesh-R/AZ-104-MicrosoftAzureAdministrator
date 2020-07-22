@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 05 - Implement Intersite Connectivity
-# Student lab manual
 
 ## Lab scenario
 

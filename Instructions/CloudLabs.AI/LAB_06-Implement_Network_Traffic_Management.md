@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 06 - Implement Traffic Management
-# Student lab manual
 
 ## Lab scenario
 

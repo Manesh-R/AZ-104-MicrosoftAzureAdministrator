@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 10 - Backup virtual machines
-# Student lab manual
 
 ## Lab scenario
 

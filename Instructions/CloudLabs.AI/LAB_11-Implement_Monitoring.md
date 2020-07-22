@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 11 - Implement Monitoring
-# Student lab manual
 
 ## Lab scenario
 
