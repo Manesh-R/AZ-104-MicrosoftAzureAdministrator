@@ -64,7 +64,7 @@ In this task, you will create and configure Azure AD users.
 
     >**Note**: You also have the option of assigning Azure AD roles when provisioning a new user.
 
-1. Open an **InPrivate** browser window and sign in to the [Azure portal](https://portal.azure.com) using the newly created user account. When prompted to update the password, change the password for the user.
+1. Open an **InPrivate** browser window and sign in to the https://portal.azure.com using the newly created user account. When prompted to update the password, change the password for the user.
 
     >**Note**: Rather than typing the user name (including the domain name), you can paste the content of Clipboard.
 

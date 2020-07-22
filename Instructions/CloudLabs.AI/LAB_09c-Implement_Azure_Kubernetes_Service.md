@@ -28,7 +28,7 @@ In this lab, you will:
 
 In this task, you will deploy an Azure Kubernetes Services cluster by using the Azure portal.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the https://portal.azure.com.
 
 1. In the Azure portal, search for locate **Kubernetes services** and then, on the **Kubernetes services** blade, click **+ Add**. 
 
