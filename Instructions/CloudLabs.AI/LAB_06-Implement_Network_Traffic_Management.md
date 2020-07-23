@@ -371,7 +371,7 @@ In this task, you will implement an Azure Load Balancer in front of the two Azur
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of a new resource group **az104-06-rg4** |
+    | Resource group | select the existing resource group **az104-06-rg4** |
     | Name | **az104-06-lb4** |
     | Region| name of the Azure region into which you deployed all other resources in this lab |
     | Type | **Public** |
@@ -468,7 +468,7 @@ In this task, you will implement an Azure Application Gateway in front of the tw
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of a new resource group **az104-06-rg5** |
+    | Resource group | select the existing resource group **az104-06-rg5** |
     | Application gateway name | **az104-06-appgw5** |
     | Region | name of the Azure region into which you deployed all other resources in this lab |
     | Tier | **Standard V2** |

@@ -40,7 +40,7 @@ In this task, you will create an Azure web app.
     | Setting | Value |
     | --- | ---|
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of a new resource group **az104-09a-rg1-[deployId]** |
+    | Resource group | select the existing resource group **az104-09a-rg1-[deployId]** |
     | Web app name | any globally unique name |
     | Publish | **Code** |
     | Runtime stack | **PHP 7.3** |
