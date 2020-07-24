@@ -47,7 +47,7 @@ In this task, you will deploy a virtual machine that will be used to test monito
 
    ```pwsh
 
-   $rgName = 'az104-11-rg0-[deployId]'
+   $rgName = 'az104-11-rg0'
 
    ```
 
@@ -86,7 +86,7 @@ In this task, you will create and configure an Azure Log Analytics workspace and
     | Settings | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | select the existing resource group **az104-11-rg1-[deployId]** |
+    | Resource group | select the existing resource group **az104-11-rg1** |
     | Log Analytics Workspace | any unique name |    
     | Region | the name of the Azure region into which you deployed the virtual machine in the previous task |
 
@@ -102,7 +102,7 @@ In this task, you will create and configure an Azure Log Analytics workspace and
     | --- | --- |
     | Name | any unique name |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-11-rg1-[deployId]** |
+    | Resource group | **az104-11-rg1** |
     | Location | the name of the Azure region determined based on [Workspace mappings documentation](https://docs.microsoft.com/en-us/azure/automation/how-to/region-mappings) |
     | Create Azure Run As account | **Yes** |
 
@@ -182,7 +182,7 @@ In this task, you will configure Azure virtual machine diagnostic settings.
 
 1. In the Azure portal, search for and select **Monitor** and, on the **Monitor | Overview** blade, click **Metrics**.
 
-1. On the **Select a scope** blade, on the **Browse** tab, navigate to the **az104-11-rg0-[deployId]** resource group, expand it, select the **az104-11-vm0** virtual machine within that resource group, and click **Apply**.
+1. On the **Select a scope** blade, on the **Browse** tab, navigate to the **az104-11-rg0** resource group, expand it, select the **az104-11-vm0** virtual machine within that resource group, and click **Apply**.
 
     >**Note**: This gives you the same view and options as those available from the **az104-11-vm0 - Metrics** blade.
 
@@ -214,7 +214,7 @@ In this task, you will configure Azure virtual machine diagnostic settings.
     | Action group name | **az104-11-ag1** |
     | Short name | **az104-11-ag1** |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **az104-11-rg1-[deployId]** |
+    | Resource group | **az104-11-rg1** |
 
 1. On the **Add action group** blade, in the **Actions** section, specify the following settings (leave others with their default values):
 
@@ -276,7 +276,7 @@ In this task, you will configure Azure virtual machine diagnostic settings.
 
     >**Note**: You might need to click **Get Started** if this is the first time you access Log Analytics.
 
-1. On the **Select a scope** blade, navigate to the **az104-11-rg0-[deployId]** resource group, expand it, select **a104-11-vm0**, and click **Apply**.
+1. On the **Select a scope** blade, navigate to the **az104-11-rg0** resource group, expand it, select **a104-11-vm0**, and click **Apply**.
 
 1. In the query window, paste the following query and click **Run**:
 
